@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Message Bahay Kawayan</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .chat-box {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .chat-box h2 {
+    margin: 0;
+    font-size: 18px;
+    }
+
+    .chat-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+    }
+
+    .chat-option {
+    display: block;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 6px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    }
+
+    .chat-option:hover {
+    background-color: #333;
+    }
+
+    textarea {
+    width: 95%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    height: 80px;
+    margin-top: 10px;
+    }
+
+    .chat-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    }
+
+    .chat-footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+
+    .send-btn {
+    background-color: #3a82f6;
+    color: #fff;
+    }
+
+    .cancel-btn {
+    background-color: #555;
+    color: #fff;
+    }
+
+    .info {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 10px;
+    }
+
+    .info a {
+    color: #66bfff;
+    }
+</style>
+</head>
+<body>
+
+
+<div class="chat-box">
+    <h2>Message Bahay Kawayan Private Resort ...</h2>
+    <p><strong>Not ready to book just yet?</strong><br>
+    No problem. You can always book later, or if you have a question, you can message the business.</p>
+
+    <button class="chat-option">Can I book another service</button>
+    <button class="chat-option">I have a question. Can you help?</button>
+    <button class="chat-option">What forms of payment do you take?</button>
+    <button class="chat-option">Do you have any other times available?</button>
+    <button class="chat-option">
+        
+    </button>
+
+    <textarea id="userMessage" placeholder="Type your message here...."></textarea>
+    <div class="chat-footer">
+    <button class="cancel-btn" onclick="cancelMessage()">Cancel</button>
+    <button class="send-btn" onclick="sendMessage()">Send</button>
+
+    </div>
+
+    <p class="info">When you send a message, Bahay Kawayan Private Resort Venue and Catering will see your <a href="#">public info</a>.</p>
+</div>
+
+<script>
+    const options = document.querySelectorAll(".chat-option");
+    const textarea = document.getElementById("userMessage");
+
+    options.forEach(option => {
+    option.addEventListener("click", () => {
+        textarea.value = option.textContent;
+    });
+    });
+
+    function sendMessage() {
+    const message = textarea.value.trim();
+    if (message) {
+        alert("Message sent:\n" + message);
+        textarea.value = "";
+    } else {
+        alert("Please type a message before sending.");
+    }
+    }
+
+    function cancelMessage() {
+    textarea.value = "";
+    }
+</script>
+
+</body>
+</html>

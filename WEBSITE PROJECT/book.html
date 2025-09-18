@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="book.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<title>Book Now - Event Management</title>
+
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="QuestionsBook.html">
+        <button class="btn"><i class="fa-solid fa-xmark"></i></button>
+    </form>
+                <h2>Book Your Event Now</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="eventType">Event Type</label>
+            <select id="eventType" name="eventType" required>
+        <option value="">-- Select --</option>
+        <option value="wedding">Wedding</option>
+        <option value="corporate">Corporate Event</option>
+        <option value="birthday">Birthday Party</option>
+        <option value="concert">Catering</option>
+        <option value="other">Other</option>
+        </select>
+
+        <label for="date">Event Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Event Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+
+        <label for="range">Budget Range</label>
+        <input type="nunber" id="budget range" name="budget range" required>
+
+        <label for="location">Event Location</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+        <form action="Message.html">
+        <button type="submit" class="submit-btn" id="">Book Now</button>
+    </form>
+</div>
+</body>
+</html>
