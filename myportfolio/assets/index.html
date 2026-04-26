@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/image.js"></script>
+
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+          <img src="assets/img/SDQDQ.png" alt="School Logo" class="school-logo">
+          <img src="/assets/img/let.jpg" alt="Brenan Alonzo" class="profile-img">
+          <div class="profile-info">
+            <h1>Brenan Alonzo</h1>
+            <p>Frontend Developer, Graphics Designer & Video Editor</p>
+          </div>
+        </div>
+      </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#location">Address</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container"> 
+        <section id="about">
+            <h2>About Me</h2>
+          
+            <div class="about-container">
+          
+              <div class="about-text">
+                <p>
+                  I am a second-year Bachelor of Science in Information Technology student with a passion for creativity.
+                  I am a video editor, bringing visual ideas to life. <br><br>
+                  My passion and niche focus on technology, particularly in Frontend Development and Graphics Design.
+                </p>
+              </div>
+              <div class="about-image">
+                <img src="assets/img/Brenan.jpg" alt="Brenan Alonzo">
+              </div>
+          
+            </div>
+          </section>
+          
+
+        <section id="location">
+            <h2>Where I Live</h2>
+          
+            <div class="location-container">
+              
+            
+              <div class="location-info">
+                <h3>Gapan City, Nueva Ecija</h3>
+                <p>I am currently based in Nueva Ecija, Philippines. I’m open to freelance projects Video Editor.</p>
+                
+                <ul>
+                  <li>📍 Mangino, Gapan City, Nueva Ecija</li>
+                  <li>💼 Open for Freelance</li>
+                </ul>
+              </div>
+          
+            
+              <div class="location-map">
+                <iframe 
+                  src="https://maps.google.com/maps?q=Gapan-City-Mangino&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  allowfullscreen>
+                </iframe>
+              </div>
+          
+            </div>
+          </section>
+
+        <section id="skills">
+            <h2>Frontend</h2>
+            <div class="skills">
+                <div class="skills-items">
+                    <img src="/assets/img/html.jpg" alt="">
+                    <h3>Html</h3>
+                 
+                </div>
+                <div class="skills-items">
+                    <img src="/assets/img/js.jpg" alt="">
+                    <h3>JavaScript</h3>
+                 
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/react.jpg" alt="">
+                    <h3>React</h3>
+                    
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/bootstrap.jpg" alt="">
+                    <h3>Bootstrap</h3>
+                  
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/tailwind.jpg" alt="">
+                    <h3>Tailwindcss</h3>
+                </div>
+      
+            </div>
+            <h2>Backend</h2>
+            <div class="skills">               
+                <div class="skills-items">
+                    <img src="assets/img/c++.jpg" alt="">
+                    <h3>C++</h3>                
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/java.jpg" alt="">
+                    <h3>Java</h3>                   
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/python.jpg" alt="">
+                    <h3>Python</h3>                 
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/mysql.jpg" alt="">
+                    <h3>Mysql</h3>                  
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/php.jpg" alt="">
+                    <h3>Php</h3>   
+                </div>
+            </div>
+        </section>  
+
+        <section>
+            <h3 class="header">Video Editor</h3>
+            
+            <div class="skills-items">
+                <video width="250" height="150" controls poster="assets/img/video-editing-thumbnai4.jpg">
+                  <source src="assets/video/editvideo.mp4" type="video/mp4">         
+                </video>
+              </div>
+              
+        </section>
+
+        <section>
+            <h2>Graphics Design</h2>
+          
+            <div class="gallery-grid">
+                <div class="img-box">
+                    <img src="assets/img/Backtoschool.png" alt="Project 1" onclick="openModal(This)">
+                </div>
+              <div class="img-box">
+                    <img src="assets/img/Icecream poster.png" alt="Project 2">
+              </div>
+              <div class="img-box">
+                    <img src="assets/img/ICE COFFE.png" alt="Project 3">
+              </div>
+              <div class="img-box">
+                    <img src="assets/img/MATCHA.png" alt="Project 4">
+              </div>
+              <div class="img-box">
+                    <img src="assets/img/Royal.png" alt="Project 5">
+              </div>
+              <div class="img-box">
+                    <img src="assets/img/NIKE.png" alt="Project 6">
+              </div> 
+            </div>
+            <div id="imageModal" class="modal" onclick="closeModal()">
+                <img id="modalImg">
+              </div>
+          </section>
+          
+        <section id="">
+            <h2>Coding Tools</h2>
+            <div class="skills">
+                <div class="skills-items">
+                    <img src="/assets/img/github.jpg" alt="">
+                    <h3>Github</h3>
+                 
+                </div>
+                <div class="skills-items">
+                    <img src="/assets/img/vscode.jpg" alt="">
+                    <h3>Visual Studio Code</h3>
+                 
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/chatgpt.jpg" alt="">
+                    <h3>ChatGpt</h3>
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/nb.jpg" alt="">
+                    <h3>Netbeans</h3>
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/figma.jpg" alt="">
+                    <h3>Figma</h3>
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/wordpress.jpg" alt="">
+                    <h3>Wordpress</h3>
+                </div>
+            </div>  
+            <h2>Editing Tools</h2>
+            <div class="skills">
+                <div class="skills-items">
+                    <img src="assets/img/ps.jpg" alt="">
+                    <h3>Photo shop</h3>
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/pr.jpg" alt="">
+                    <h3>Premiere pro</h3>
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/canva.jpg" alt="">
+                    <h3>Canva</h3>
+                </div>
+                <div class="skills-items">
+                    <img src="assets/img/capcut.jpg" alt="">
+                    <h3>Capcut pro</h3>
+                </div>
+            </div>  
+        </section>
+        <section id="experience">
+            <h2>Experience & Education</h2>
+          
+            <div class="experience-item">
+                <img src="assets/img/frontend.jpg" alt="Frontend Developer" class="exp-logo">
+              <div class="exp-content">
+                <h3>Freelancing Frontend Dev, VE, Graphics Designer</h3>
+                <p class="experience-date">2025 - Present</p>
+                <p>I work as a freelancer, creating responsive and visually appealing for clients worldwide.</p>
+              </div>
+            </div>
+          
+            <div class="experience-item">
+              <img src="assets/img/jrlmhsh.png" alt="Juan R. Liwag Memorial Highschool Logo" class="exp-logo">
+              <div class="exp-content">
+                <h3>TVL - Information Communication and Technology at<br>Juan R. Liwag Memorial Highschool Senior Highschool</h3>
+                <p class="experience-date">2022 - 2024 - Graduated</p>
+              </div>
+            </div>
+          
+            <div class="experience-item">
+              <img src="assets/img/crt.jpg" alt="CRT Gapan Logo" class="exp-logo">
+              <div class="exp-content">
+                <h3>Associate in Computer Technology at<br>College For Research and Technology - Gapan Campus</h3>
+                <p class="experience-date">2024 - 2025</p>
+              </div>
+            </div>
+          
+            <div class="experience-item">
+              <img src="assets/img/neust.png" alt="NEUST Logo" class="exp-logo">
+              <div class="exp-content">
+                <h3>Bachelor of Science in Information Technology at<br>Neuva Ecija University Science and Technology - San Isidro Campus</h3>
+                <p class="experience-date">2025 - 2028
+                    
+                </p>
+              </div>
+            </div>
+          </section>
+          
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <img src="assets/img/p1.png" alt="Event Management Website" style="width:100%; max-width:600px; border-radius:10px; margin-bottom:10px;">
+                <h3>Event Management Website</h3>
+                <p>A responsive website for academic purposes.</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/img/p2.png" alt="Mocha Mingle Coffee" style="width:100%; max-width:600px; border-radius:10px; margin-bottom:10px;">
+                <h3>Mocha Mingle Caffee</h3>
+                <p>This very site! a modern first client to responsve website.</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/img/p.png" alt="Admin Dashboard" style="width:100%; max-width:600px; border-radius:10px; margin-bottom:10px;">
+                <h3>Admin Dashboard</h3>
+                <p>The dashboard is designed with HTML for structure, CSS for styling, and JavaScript for interactivity and real-time updates.</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/img/p3.png" alt="BMI" style="width:100%; max-width:600px; border-radius:10px; margin-bottom:10px;">
+                <h3>BMI Calculator</h3>
+                <p>Enter your height and weight to get your BMI result.
+                </p>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Let's connect! Reach out via email or social media.</p>
+            <p>Phone: 09104688008</p>
+            <div class="contact-links">
+                <a href="#alonzobrenan8@gmail.com">Email</a>    
+                <a href="https://www.linkedin.com/in/brenan-alonzo-6a1314375">LinkedIn</a>
+                <a href="" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/share/1DGe3fbsBK/">Facebook</a>
+                <a href="https://www.instagram.com/brent_zxxzzz?igsh=dnZuYmYxemY0Nmpr">Instagram</a>
+               
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Brent.</p>
+    </footer>
+
+</body>
+</html>
+
